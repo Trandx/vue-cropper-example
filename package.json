@@ -1,0 +1,25 @@
+{
+  "name": "vue-cropper-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "cp-example": "rm -r ../vue-cropper/example/src && cp -r ./src ../vue-cropper/example"
+  },
+  "dependencies": {
+    "vue": "^3.5.8",
+    "vue-cropper": "file:../vue-cropper/dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "@types/node": "^20.16.9",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  }
+}
