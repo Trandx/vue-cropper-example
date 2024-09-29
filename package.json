@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "cp-example": "rm -r ../vue-cropper/example/src && cp -r ./src ../vue-cropper/example"
   },

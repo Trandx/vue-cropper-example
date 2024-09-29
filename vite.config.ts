@@ -13,7 +13,10 @@ export default defineConfig(() => {
         // '@': path.resolve(__dirname, './src'),
         "@": basePath,
       },
-    }
+    },
+    build: {
+      outDir: 'dist', // Ensure this matches what Vercel expects
+    },
   }
   return config
 })
