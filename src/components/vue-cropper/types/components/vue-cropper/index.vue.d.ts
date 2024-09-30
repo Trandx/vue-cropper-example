@@ -1,0 +1,56 @@
+import { StyleValue } from 'vue';
+import Cropper from '@/libs/cropperjs';
+import '@/libs/cropperjs/index.css';
+type PropsType = {
+    src: string;
+    alt?: string;
+    imgStyle?: StyleValue;
+    cropBoxResizable?: boolean;
+    canvasWidth?: number;
+    canvasHeight?: number;
+    cropBoxWidth?: number;
+    cropBoxHeight?: number;
+};
+declare const _default: import("vue").DefineComponent<PropsType, {
+    getAttribute: (name: string) => string | null | undefined;
+    setAttribute: (name: string, value: string) => void | undefined;
+    reset: () => void;
+    clear: () => Cropper | undefined;
+    replace: (url: string, onlyColorChanged?: boolean) => void;
+    enable: () => Cropper | undefined;
+    disable: () => Cropper | undefined;
+    destroy: () => Cropper | undefined;
+    move: (offsetX: number, offsetY: number) => Cropper | undefined;
+    moveTo: (x: number, y?: number) => Cropper | undefined;
+    zoom: (ratio: number) => Cropper | undefined;
+    zoomTo: (ratio: number) => Cropper | undefined;
+    scale: (scaleX: 1 | -1, scaleY?: 1 | -1) => Cropper | undefined;
+    scaleX: (scaleX: 1 | -1) => Cropper | undefined;
+    scaleY: (scaleY: 1 | -1) => Cropper | undefined;
+    rotate: (degree: number) => Cropper | undefined;
+    rotateTo: (degree: number) => Cropper | undefined;
+    getData: (rounded?: boolean) => Cropper.Data | undefined;
+    setData: (data: Cropper.SetDataOptions) => Cropper | undefined;
+    getContainerData: () => Cropper.ContainerData | undefined;
+    getImageData: () => Cropper.ImageData | undefined;
+    getCanvasData: () => Cropper.CanvasData | undefined;
+    setCanvasData: (data: Cropper.SetCanvasDataOptions) => Cropper | undefined;
+    getCropBoxData: () => Cropper.CropBoxData | undefined;
+    setCropBoxData: (data: Cropper.SetCropBoxDataOptions) => Cropper | undefined;
+    getCroppedCanvas: (options?: Cropper.GetCroppedCanvasOptions | undefined) => HTMLCanvasElement | undefined;
+    setAspectRatio: (aspectRatio: number) => Cropper | undefined;
+    setDragMode: (mode: Cropper.DragMode) => Cropper | undefined;
+}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
+    cropstart: (elt?: any) => any;
+    cropmove: (elt?: any) => any;
+    cropend: (elt?: any) => any;
+    preview: (elt?: any) => any;
+    ready: (elt?: any) => any;
+}, string, import("vue").PublicProps, Readonly<PropsType> & Readonly<{
+    onCropstart?: ((elt?: any) => any) | undefined;
+    onCropmove?: ((elt?: any) => any) | undefined;
+    onCropend?: ((elt?: any) => any) | undefined;
+    onPreview?: ((elt?: any) => any) | undefined;
+    onReady?: ((elt?: any) => any) | undefined;
+}>, {}, {}, {}, {}, string, import("vue").ComponentProvideOptions, false, {}, any>;
+export default _default;

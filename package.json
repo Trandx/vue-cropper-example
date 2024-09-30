@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^3.5.8",
-    "vue-cropper": "file:../vue-cropper/dist"
+    "@trandx/vue-cropper": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

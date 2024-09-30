@@ -76,8 +76,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { VueCropper } from 'vue-cropper'
-import 'vue-cropper/lib/style.css';
+import { VueCropper } from '@trandx/vue-cropper'
+import '@trandx/vue-cropper/lib/style.css';
 
   type ScaleType =  1 | -1
   type VueCropperType = InstanceType<typeof VueCropper>

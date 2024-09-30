@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@trandx/vue-cropper':
+        specifier: ^1.0.0
+        version: 1.0.5(vue@3.5.10(typescript@5.6.2))
       vue:
         specifier: ^3.5.8
         version: 3.5.10(typescript@5.6.2)
-      vue-cropper:
-        specifier: file:../vue-cropper/dist
-        version: file:../vue-cropper/dist(vue@3.5.10(typescript@5.6.2))
     devDependencies:
       '@types/node':
         specifier: ^20.16.9
@@ -315,6 +315,11 @@ packages:
     resolution: {integrity: sha512-+lvL/4mQxSV8MukpkKyyvfwhH266COcWlXE/1qxwN08ajovta3459zrjLghYMgDerlzNwLAcFpvU+WWE5y6nAQ==}
     cpu: [x64]
     os: [win32]
+
+  '@trandx/vue-cropper@1.0.5':
+    resolution: {integrity: sha512-dPgstzQSPuiNgWnlTG+pHnDkKQZSuRjv7aDv+xIwiUFaY3OGKaKUptPb3pQ9NefrCOzdl8avp2hGE13WF6vbjA==}
+    peerDependencies:
+      vue: '>=3.4.0'
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -866,11 +871,6 @@ packages:
   vscode-uri@3.0.8:
     resolution: {integrity: sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==}
 
-  vue-cropper@file:../vue-cropper/dist:
-    resolution: {directory: ../vue-cropper/dist, type: directory}
-    peerDependencies:
-      vue: '>=3.4.0'
-
   vue-tsc@2.1.6:
     resolution: {integrity: sha512-f98dyZp5FOukcYmbFpuSCJ4Z0vHSOSmxGttZJCsFeX0M4w/Rsq0s4uKXjcSRsZqsRgQa6z7SfuO+y0HVICE57Q==}
     hasBin: true
@@ -1078,6 +1078,10 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.22.5':
     optional: true
+
+  '@trandx/vue-cropper@1.0.5(vue@3.5.10(typescript@5.6.2))':
+    dependencies:
+      vue: 3.5.10(typescript@5.6.2)
 
   '@types/estree@1.0.6': {}
 
@@ -1639,10 +1643,6 @@ snapshots:
       fsevents: 2.3.3
 
   vscode-uri@3.0.8: {}
-
-  vue-cropper@file:../vue-cropper/dist(vue@3.5.10(typescript@5.6.2)):
-    dependencies:
-      vue: 3.5.10(typescript@5.6.2)
 
   vue-tsc@2.1.6(typescript@5.6.2):
     dependencies:
